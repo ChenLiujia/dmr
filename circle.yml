@@ -1,0 +1,11 @@
+machine:
+    python:
+        version: 3.5.0
+dependencies:
+    pre:
+        - pip install --upgrade setuptools
+        - pip install --upgrade pip
+        - pip install -r requirements.txt
+test:
+    override:
+        - nosetests -v
